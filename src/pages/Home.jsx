@@ -45,7 +45,7 @@ export default function Home() {
           >
             <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 mx-auto mb-6 rounded-full bg-white shadow-2xl ring-2 ring-white/40 overflow-hidden flex items-center justify-center">
               <img
-                src="/seal-logo.png"
+                src={`${import.meta.env.BASE_URL}seal-logo.png`}
                 alt="SEAL logo"
                 className="w-full h-full object-cover"
               />

@@ -26,7 +26,7 @@ export default function Navbar() {
           <Link to={createPageUrl('Home')} className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-full bg-white shadow-lg ring-1 ring-slate-200 overflow-hidden group-hover:shadow-cyan-200 transition-shadow flex items-center justify-center">
               <img
-                src="/seal-logo.png"
+                src={`${import.meta.env.BASE_URL}seal-logo.png`}
                 alt="SEAL logo"
                 className="w-full h-full object-cover"
               />
