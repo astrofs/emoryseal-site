@@ -1,0 +1,48 @@
+{
+  "name": "Event",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Event title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Event description"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Event date"
+    },
+    "time": {
+      "type": "string",
+      "description": "Event time"
+    },
+    "location": {
+      "type": "string",
+      "description": "Event location"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "Meeting",
+        "Field Trip",
+        "Workshop",
+        "Social",
+        "Volunteer",
+        "Speaker",
+        "Other"
+      ],
+      "description": "Type of event"
+    },
+    "registration_link": {
+      "type": "string",
+      "description": "Optional registration link"
+    }
+  },
+  "required": [
+    "title",
+    "date"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "TeamMember",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Full name of team member"
+    },
+    "role": {
+      "type": "string",
+      "description": "Position/role in SEAL"
+    },
+    "major": {
+      "type": "string",
+      "description": "Academic major"
+    },
+    "year": {
+      "type": "string",
+      "enum": [
+        "Freshman",
+        "Sophomore",
+        "Junior",
+        "Senior",
+        "Graduate"
+      ],
+      "description": "Academic year"
+    },
+    "email": {
+      "type": "string",
+      "description": "Emory email address"
+    },
+    "bio": {
+      "type": "string",
+      "description": "Short biography"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Profile photo URL"
+    },
+    "linkedin_url": {
+      "type": "string",
+      "description": "LinkedIn profile URL"
+    },
+    "display_order": {
+      "type": "number",
+      "description": "Order to display on team page"
+    }
+  },
+  "required": [
+    "name",
+    "role"
+  ]
+}

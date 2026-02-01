@@ -1,0 +1,50 @@
+{
+  "name": "Subscriber",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Full name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email address"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "newsletter",
+        "membership"
+      ],
+      "description": "Type of signup"
+    },
+    "major": {
+      "type": "string",
+      "description": "Academic major (for membership)"
+    },
+    "year": {
+      "type": "string",
+      "enum": [
+        "Freshman",
+        "Sophomore",
+        "Junior",
+        "Senior",
+        "Graduate"
+      ],
+      "description": "Academic year"
+    },
+    "interests": {
+      "type": "string",
+      "description": "Areas of interest in aquatic science"
+    },
+    "message": {
+      "type": "string",
+      "description": "Additional message or questions"
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "type"
+  ]
+}
