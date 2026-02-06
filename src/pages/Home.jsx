@@ -63,7 +63,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="https://docs.google.com/forms/d/1dQ1mC3WCq0p5T_e8q2M9Vjm3Bn8LX5ITL6cxzHC-t-I/edit" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScoyf-hFqWJDYMGLjb8QYiZyhGqWqHaIlUfM1Ts5cRRGPOWXw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-cyan-800 hover:bg-cyan-50 shadow-xl hover:shadow-2xl transition-all px-8 py-6 text-lg font-semibold">
                   Become a Member
                 </Button>
@@ -160,7 +160,7 @@ export default function Home() {
             Join SEAL today and become part of Emory's premier aquatic science community
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="https://docs.google.com/forms/d/1dQ1mC3WCq0p5T_e8q2M9Vjm3Bn8LX5ITL6cxzHC-t-I/edit" target="_blank" rel="noopener noreferrer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScoyf-hFqWJDYMGLjb8QYiZyhGqWqHaIlUfM1Ts5cRRGPOWXw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-white text-cyan-800 hover:bg-cyan-50 shadow-xl px-8 py-6 text-lg font-semibold">
                 Become a Member
               </Button>

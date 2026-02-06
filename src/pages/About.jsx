@@ -146,7 +146,7 @@ export default function About() {
           <p className="text-xl text-cyan-100 mb-8">
             Become part of Emory's premier aquatic science organization
           </p>
-          <a href="https://docs.google.com/forms/d/1dQ1mC3WCq0p5T_e8q2M9Vjm3Bn8LX5ITL6cxzHC-t-I/edit" target="_blank" rel="noopener noreferrer">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScoyf-hFqWJDYMGLjb8QYiZyhGqWqHaIlUfM1Ts5cRRGPOWXw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-white text-cyan-800 hover:bg-cyan-50 shadow-xl px-8 py-6 text-lg font-semibold">
               Get Involved
             </Button>

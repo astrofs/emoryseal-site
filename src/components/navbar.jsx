@@ -62,7 +62,7 @@ export default function Navbar() {
             >
               <Instagram className="w-5 h-5" />
             </a>
-            <a href="https://docs.google.com/forms/d/1dQ1mC3WCq0p5T_e8q2M9Vjm3Bn8LX5ITL6cxzHC-t-I/edit" target="_blank" rel="noopener noreferrer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScoyf-hFqWJDYMGLjb8QYiZyhGqWqHaIlUfM1Ts5cRRGPOWXw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
               <Button className="bg-gradient-to-r from-cyan-700 to-teal-700 hover:from-cyan-800 hover:to-teal-800 text-white shadow-lg hover:shadow-cyan-200 transition-all">
                 Join SEAL
               </Button>
@@ -108,7 +108,7 @@ export default function Navbar() {
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="https://docs.google.com/forms/d/1dQ1mC3WCq0p5T_e8q2M9Vjm3Bn8LX5ITL6cxzHC-t-I/edit" target="_blank" rel="noopener noreferrer" className="flex-1">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScoyf-hFqWJDYMGLjb8QYiZyhGqWqHaIlUfM1Ts5cRRGPOWXw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="flex-1">
                   <Button className="w-full bg-gradient-to-r from-cyan-700 to-teal-700">
                     Join SEAL
                   </Button>

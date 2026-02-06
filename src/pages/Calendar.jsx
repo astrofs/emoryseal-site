@@ -44,7 +44,7 @@ const sampleEvents = [
     time: '9:00 AM',
     location: 'Georgia Aquarium',
     description: 'Explore marine exhibits and behind-the-scenes conservation work.',
-    registration_link: 'https://docs.google.com/forms/d/1dQ1mC3WCq0p5T_e8q2M9Vjm3Bn8LX5ITL6cxzHC-t-I/edit',
+    registration_link: 'https://docs.google.com/forms/d/e/1FAIpQLScoyf-hFqWJDYMGLjb8QYiZyhGqWqHaIlUfM1Ts5cRRGPOWXw/viewform?usp=dialog',
   },
   {
     id: 'evt-4',
