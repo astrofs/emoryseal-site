@@ -70,10 +70,10 @@ export default function Team() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative py-24 bg-gradient-to-br from-slate-950 via-cyan-950 to-teal-950 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-br from-slate-950 via-blue-950 to-blue-900 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-10 left-20 w-64 h-64 bg-cyan-500/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-20 w-80 h-80 bg-teal-500/20 rounded-full blur-3xl" />
+          <div className="absolute top-10 left-20 w-64 h-64 bg-yellow-500/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-20 w-80 h-80 bg-yellow-400/20 rounded-full blur-3xl" />
         </div>
         
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
@@ -82,7 +82,7 @@ export default function Team() {
             animate={{ opacity: 1, y: 0 }}
           >
             <h1 className="text-5xl font-bold text-white mb-6">Our Team</h1>
-            <p className="text-xl text-cyan-100/90">
+            <p className="text-xl text-yellow-100/90">
               Meet the passionate students leading SEAL
             </p>
           </motion.div>
@@ -129,10 +129,10 @@ export default function Team() {
                       <img 
                         src={member.image_url} 
                         alt={member.name}
-                        className="w-32 h-32 rounded-full object-cover mx-auto ring-4 ring-cyan-100 group-hover:ring-cyan-200 transition-all"
+                        className="w-32 h-32 rounded-full object-cover mx-auto ring-4 ring-yellow-100 group-hover:ring-yellow-200 transition-all"
                       />
                     ) : (
-                      <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center mx-auto">
+                      <div className="w-32 h-32 rounded-full bg-gradient-to-br from-yellow-500 to-blue-500 flex items-center justify-center mx-auto">
                         <span className="text-4xl font-bold text-white">
                           {member.name?.split(' ').map(n => n[0]).join('').slice(0, 2)}
                         </span>
@@ -141,7 +141,7 @@ export default function Team() {
                   </div>
                   
                   <h3 className="text-xl font-bold text-slate-900 mb-1">{member.name}</h3>
-                  <p className="text-cyan-600 font-medium mb-2">{member.role}</p>
+                  <p className="text-blue-600 font-medium mb-2">{member.role}</p>
                   
                   {(member.major || member.year) && (
                     <p className="text-sm text-slate-500 mb-4">
@@ -159,7 +159,7 @@ export default function Team() {
                     {member.email && (
                       <a 
                         href={`mailto:${member.email}`}
-                        className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-cyan-600 transition-colors"
+                        className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-blue-600 transition-colors"
                       >
                         <Mail className="w-4 h-4" />
                         Email

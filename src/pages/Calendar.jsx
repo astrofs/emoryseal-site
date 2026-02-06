@@ -36,43 +36,6 @@ const sampleEvents = [
     location: 'TBD',
     description: 'Our first general body meeting of the semester. All members welcome!',
   },
-  {
-    id: 'evt-3',
-    title: 'Aquarium Field Trip',
-    date: '2026-02-15',
-    event_type: 'Field Trip',
-    time: '9:00 AM',
-    location: 'Georgia Aquarium',
-    description: 'Explore marine exhibits and behind-the-scenes conservation work.',
-    registration_link: 'https://docs.google.com/forms/d/e/1FAIpQLScoyf-hFqWJDYMGLjb8QYiZyhGqWqHaIlUfM1Ts5cRRGPOWXw/viewform?usp=dialog',
-  },
-  {
-    id: 'evt-4',
-    title: 'Marine Biology Workshop',
-    date: '2026-03-01',
-    event_type: 'Workshop',
-    time: '4:00 PM',
-    location: 'MSC Multipurpose Room',
-    description: 'Hands-on microscopy and specimen lab session.',
-  },
-  {
-    id: 'evt-5',
-    title: 'Community Beach Cleanup',
-    date: '2026-03-20',
-    event_type: 'Volunteer',
-    time: '10:00 AM',
-    location: 'Tybee Island',
-    description: 'Help protect marine habitats with a shoreline cleanup.',
-  },
-  {
-    id: 'evt-6',
-    title: 'Guest Speaker: Seal Conservation',
-    date: '2026-04-03',
-    event_type: 'Speaker',
-    time: '7:00 PM',
-    location: 'White Hall 205',
-    description: 'Learn about seal rescue and rehabilitation efforts.',
-  },
 ]
 
 export default function Calendar() {

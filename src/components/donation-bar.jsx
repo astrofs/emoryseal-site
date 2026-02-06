@@ -9,7 +9,7 @@ export default function DonationBar({ currentAmount = 0, goalAmount = 2500, gofu
   const percentage = Math.min((currentAmount / goalAmount) * 100, 100)
   
   return (
-    <div className="bg-gradient-to-r from-cyan-700 to-teal-700 text-white py-4 px-4">
+    <div className="bg-gradient-to-r from-blue-700 to-blue-600 text-white py-4 px-4">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-4 flex-1 w-full sm:w-auto">
           <Heart className="w-6 h-6 text-pink-300 flex-shrink-0" />
@@ -18,8 +18,8 @@ export default function DonationBar({ currentAmount = 0, goalAmount = 2500, gofu
               <span className="font-semibold text-base">Raise Money to Save the Seal 🦭</span>
             </div>
             <div className="flex justify-between text-sm mb-1">
-              <span className="text-cyan-100">Current: ${currentAmount.toLocaleString()}</span>
-              <span className="text-cyan-100 font-medium">Goal: ${goalAmount.toLocaleString()}</span>
+              <span className="text-yellow-100">Current: ${currentAmount.toLocaleString()}</span>
+              <span className="text-yellow-100 font-medium">Goal: ${goalAmount.toLocaleString()}</span>
             </div>
             <div className="h-3 bg-white/20 rounded-full overflow-hidden">
               <motion.div 
@@ -38,7 +38,7 @@ export default function DonationBar({ currentAmount = 0, goalAmount = 2500, gofu
         >
           <Button 
             size="default" 
-            className="bg-white text-cyan-800 hover:bg-cyan-50 font-semibold shadow-lg px-6"
+            className="bg-white text-blue-800 hover:bg-blue-50 font-semibold shadow-lg px-6"
           >
             Donate Now
             <ExternalLink className="w-4 h-4 ml-2" />

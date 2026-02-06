@@ -65,10 +65,10 @@ export default function GetInvolved() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative py-24 bg-gradient-to-br from-slate-950 via-cyan-950 to-teal-950 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-br from-slate-950 via-blue-950 to-blue-900 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-10 left-20 w-64 h-64 bg-cyan-500/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-20 w-80 h-80 bg-teal-500/20 rounded-full blur-3xl" />
+          <div className="absolute top-10 left-20 w-64 h-64 bg-yellow-500/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-20 w-80 h-80 bg-yellow-400/20 rounded-full blur-3xl" />
         </div>
         
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
@@ -77,7 +77,7 @@ export default function GetInvolved() {
             animate={{ opacity: 1, y: 0 }}
           >
             <h1 className="text-5xl font-bold text-white mb-6">Get Involved</h1>
-            <p className="text-xl text-cyan-100/90">
+            <p className="text-xl text-yellow-100/90">
               Join our community and make a splash with SEAL
             </p>
           </motion.div>
@@ -255,7 +255,7 @@ export default function GetInvolved() {
 
                         <Button 
                           type="submit" 
-                          className="w-full bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-700 hover:to-teal-700"
+                          className="w-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600"
                           disabled={membershipMutation.isPending}
                         >
                           {membershipMutation.isPending ? (
@@ -324,7 +324,7 @@ export default function GetInvolved() {
 
                         <Button 
                           type="submit" 
-                          className="w-full bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-700 hover:to-teal-700"
+                          className="w-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600"
                           disabled={newsletterMutation.isPending}
                         >
                           {newsletterMutation.isPending ? (
@@ -347,7 +347,7 @@ export default function GetInvolved() {
       </section>
 
       {/* Donation Section */}
-      <section id="donate" className="py-32 px-4 bg-gradient-to-br from-cyan-700 to-teal-800">
+      <section id="donate" className="py-32 px-4 bg-gradient-to-br from-blue-700 to-blue-700">
         <motion.div 
           className="max-w-5xl mx-auto text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -356,10 +356,10 @@ export default function GetInvolved() {
         >
           <div className="text-8xl mb-8">🦭</div>
           <h2 className="text-5xl sm:text-6xl font-bold text-white mb-6">Raise Money to Save the Seal</h2>
-          <p className="text-2xl text-cyan-100 mb-4 font-medium">
+          <p className="text-2xl text-yellow-100 mb-4 font-medium">
             Raising money for a seal sanctuary
           </p>
-          <p className="text-xl text-cyan-200/80 mb-10 max-w-3xl mx-auto">
+          <p className="text-xl text-yellow-200/80 mb-10 max-w-3xl mx-auto">
             Your donation directly supports seal conservation efforts, habitat protection, and rehabilitation programs. Every contribution helps save these amazing marine animals!
           </p>
           <a 
@@ -367,7 +367,7 @@ export default function GetInvolved() {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <Button size="lg" className="bg-white text-cyan-800 hover:bg-cyan-50 shadow-2xl px-12 py-8 text-xl font-bold">
+            <Button size="lg" className="bg-white text-blue-800 hover:bg-blue-50 shadow-2xl px-12 py-8 text-xl font-bold">
               Donate on GoFundMe
               <ExternalLink className="w-6 h-6 ml-3" />
             </Button>

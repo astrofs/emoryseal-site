@@ -21,13 +21,13 @@ export default function Home() {
           >
             <source src="https://videos.pexels.com/video-files/856973/856973-hd_1920_1080_30fps.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-br from-cyan-950/80 via-teal-900/80 to-blue-950/80" />
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-950/80 via-blue-900/80 to-blue-950/80" />
         </div>
         
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden z-[1]">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl animate-pulse delay-1000" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-yellow-500/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-400/20 rounded-full blur-3xl animate-pulse delay-1000" />
         </div>
 
         {/* Wave Pattern */}
@@ -54,22 +54,22 @@ export default function Home() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-2 leading-tight">
               SEAL
             </h1>
-            <p className="text-xl sm:text-2xl lg:text-3xl text-cyan-100/90 font-light mb-6">
+            <p className="text-xl sm:text-2xl lg:text-3xl text-yellow-100/90 font-light mb-6">
               Students Exploring Aquatic Life
             </p>
             
-            <p className="text-lg sm:text-xl text-cyan-100/90 max-w-2xl mx-auto mb-8 leading-relaxed">
+            <p className="text-lg sm:text-xl text-yellow-100/90 max-w-2xl mx-auto mb-8 leading-relaxed">
               A collaborative community dedicated to exploring the wonders of aquatic ecosystems and marine science
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="https://docs.google.com/forms/d/e/1FAIpQLScoyf-hFqWJDYMGLjb8QYiZyhGqWqHaIlUfM1Ts5cRRGPOWXw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-white text-cyan-800 hover:bg-cyan-50 shadow-xl hover:shadow-2xl transition-all px-8 py-6 text-lg font-semibold">
+                <Button size="lg" className="bg-white text-blue-800 hover:bg-blue-50 shadow-xl hover:shadow-2xl transition-all px-8 py-6 text-lg font-semibold">
                   Become a Member
                 </Button>
               </a>
               <Link to={createPageUrl('About')}>
-                <Button size="lg" className="bg-cyan-600 border-2 border-cyan-400 text-white hover:bg-cyan-500 px-8 py-6 text-lg font-semibold">
+                <Button size="lg" className="bg-blue-600 border-2 border-yellow-400 text-white hover:bg-yellow-500 px-8 py-6 text-lg font-semibold">
                   Learn More
                 </Button>
               </Link>
@@ -87,18 +87,18 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-2 bg-cyan-100 text-cyan-700 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-yellow-100 text-blue-700 rounded-full px-4 py-2 mb-6">
             <span className="text-sm font-semibold">Our Mission</span>
           </div>
           <blockquote className="text-2xl sm:text-3xl lg:text-4xl font-light text-slate-700 leading-relaxed italic">
             "The mission of SEAL is to provide a 
-            <span className="font-semibold text-cyan-600"> collaborative </span> 
+            <span className="font-semibold text-blue-600"> collaborative </span> 
             and 
-            <span className="font-semibold text-teal-600"> intellectually stimulating </span> 
+            <span className="font-semibold text-blue-500"> intellectually stimulating </span> 
             community for Emory University students interested in all sciences relevant to 
             <span className="font-semibold text-blue-600"> aquatic life </span> 
             and 
-            <span className="font-semibold text-cyan-600"> aquatic ecosystems</span>."
+            <span className="font-semibold text-blue-600"> aquatic ecosystems</span>."
           </blockquote>
         </motion.div>
       </section>
@@ -148,7 +148,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-4 bg-gradient-to-br from-cyan-700 to-teal-800">
+      <section className="py-24 px-4 bg-gradient-to-br from-blue-700 to-blue-700">
         <motion.div 
           className="max-w-4xl mx-auto text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -156,12 +156,12 @@ export default function Home() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Dive In?</h2>
-          <p className="text-xl text-cyan-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-yellow-100 mb-8 max-w-2xl mx-auto">
             Join SEAL today and become part of Emory's premier aquatic science community
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScoyf-hFqWJDYMGLjb8QYiZyhGqWqHaIlUfM1Ts5cRRGPOWXw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-white text-cyan-800 hover:bg-cyan-50 shadow-xl px-8 py-6 text-lg font-semibold">
+              <Button size="lg" className="bg-white text-blue-800 hover:bg-blue-50 shadow-xl px-8 py-6 text-lg font-semibold">
                 Become a Member
               </Button>
             </a>
@@ -175,7 +175,7 @@ export default function Home() {
       </section>
 
       {/* Donation CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-cyan-700 to-teal-700">
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-700 to-blue-600">
         <motion.div 
           className="max-w-4xl mx-auto text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -184,7 +184,7 @@ export default function Home() {
         >
           <div className="text-6xl mb-6">🦭</div>
           <h2 className="text-4xl font-bold text-white mb-4">Help Us Save the Seals</h2>
-          <p className="text-xl text-cyan-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-yellow-100 mb-8 max-w-2xl mx-auto">
             Every donation goes directly to seal sanctuary support and marine conservation efforts.
           </p>
           <a 
@@ -192,7 +192,7 @@ export default function Home() {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <Button size="lg" className="bg-white text-cyan-800 hover:bg-cyan-50 shadow-xl px-10 py-6 text-lg font-bold">
+            <Button size="lg" className="bg-white text-blue-800 hover:bg-blue-50 shadow-xl px-10 py-6 text-lg font-bold">
               Donate Now
               <ExternalLink className="w-5 h-5 ml-2" />
             </Button>

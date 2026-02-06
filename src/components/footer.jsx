@@ -30,7 +30,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-cyan-400 mb-4">Quick Links</h4>
+            <h4 className="font-semibold text-yellow-400 mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {['Home', 'About', 'Team', 'Calendar', 'GetInvolved'].map((page) => (
                 <li key={page}>
@@ -47,7 +47,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-cyan-400 mb-4">Connect</h4>
+            <h4 className="font-semibold text-yellow-400 mb-4">Connect</h4>
             <ul className="space-y-3">
               <li>
                 <a 

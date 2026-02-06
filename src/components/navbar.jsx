@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to={createPageUrl('Home')} className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-full bg-white shadow-lg ring-1 ring-slate-200 overflow-hidden group-hover:shadow-cyan-200 transition-shadow flex items-center justify-center">
+            <div className="w-10 h-10 rounded-full bg-white shadow-lg ring-1 ring-slate-200 overflow-hidden group-hover:shadow-yellow-200 transition-shadow flex items-center justify-center">
               <img
                 src={`${import.meta.env.BASE_URL}seal-logo.png`}
                 alt="SEAL logo"
@@ -32,7 +32,7 @@ export default function Navbar() {
               />
             </div>
             <div>
-              <span className="text-xl font-bold bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent">
+              <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
                 SEAL
               </span>
               <p className="text-[10px] text-slate-500 -mt-1 tracking-wide">EMORY UNIVERSITY</p>
@@ -45,7 +45,7 @@ export default function Navbar() {
               <Link
                 key={link.page}
                 to={createPageUrl(link.page)}
-                className="px-4 py-2 text-sm font-medium text-slate-600 hover:text-cyan-600 rounded-lg hover:bg-cyan-50 transition-all"
+                className="px-4 py-2 text-sm font-medium text-slate-600 hover:text-blue-600 rounded-lg hover:bg-blue-50 transition-all"
               >
                 {link.name}
               </Link>
@@ -63,7 +63,7 @@ export default function Navbar() {
               <Instagram className="w-5 h-5" />
             </a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScoyf-hFqWJDYMGLjb8QYiZyhGqWqHaIlUfM1Ts5cRRGPOWXw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-gradient-to-r from-cyan-700 to-teal-700 hover:from-cyan-800 hover:to-teal-800 text-white shadow-lg hover:shadow-cyan-200 transition-all">
+              <Button className="bg-gradient-to-r from-blue-700 to-blue-600 hover:from-blue-800 hover:to-blue-700 text-white shadow-lg hover:shadow-yellow-200 transition-all">
                 Join SEAL
               </Button>
             </a>
@@ -93,7 +93,7 @@ export default function Navbar() {
                 <Link
                   key={link.page}
                   to={createPageUrl(link.page)}
-                  className="block px-4 py-3 text-slate-600 hover:text-cyan-600 hover:bg-cyan-50 rounded-lg font-medium"
+                  className="block px-4 py-3 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
@@ -109,7 +109,7 @@ export default function Navbar() {
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScoyf-hFqWJDYMGLjb8QYiZyhGqWqHaIlUfM1Ts5cRRGPOWXw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="flex-1">
-                  <Button className="w-full bg-gradient-to-r from-cyan-700 to-teal-700">
+                  <Button className="w-full bg-gradient-to-r from-blue-700 to-blue-600">
                     Join SEAL
                   </Button>
                 </a>
