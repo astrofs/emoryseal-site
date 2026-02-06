@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/emoryseal-site/',
+  base: '/',
   logLevel: 'error', // Suppress warnings, only show errors
   resolve: {
     alias: {

@@ -8,27 +8,36 @@ import { Badge } from '@/components/ui/badge'
 import { Skeleton } from '@/components/ui/skeleton'
 
 const eventTypeColors = {
-  Meeting: 'bg-blue-100 text-blue-700 border-blue-200',
-  'Field Trip': 'bg-emerald-100 text-emerald-700 border-emerald-200',
-  Workshop: 'bg-violet-100 text-violet-700 border-violet-200',
-  Social: 'bg-pink-100 text-pink-700 border-pink-200',
-  Volunteer: 'bg-amber-100 text-amber-700 border-amber-200',
-  Speaker: 'bg-cyan-100 text-cyan-700 border-cyan-200',
+  Meeting: 'bg-yellow-100 text-yellow-700 border-yellow-300',
+  'Field Trip': 'bg-blue-100 text-blue-700 border-blue-200',
+  Workshop: 'bg-yellow-50 text-yellow-600 border-yellow-200',
+  Social: 'bg-yellow-100 text-yellow-700 border-yellow-300',
+  Volunteer: 'bg-blue-100 text-blue-700 border-blue-200',
+  Speaker: 'bg-yellow-50 text-yellow-600 border-yellow-200',
   Other: 'bg-slate-100 text-slate-700 border-slate-200',
 }
 
 const sampleEvents = [
   {
     id: 'evt-1',
-    title: 'Welcome Meeting',
-    date: '2026-02-05',
-    event_type: 'Meeting',
-    time: '6:30 PM',
-    location: 'Atwood 260',
-    description: 'Kick off the semester with introductions and plans for upcoming events.',
+    title: 'Wonderful Wednesday',
+    date: '2026-02-11',
+    event_type: 'Social',
+    time: 'TBD',
+    location: 'TBD',
+    description: 'Join us for our Wonderful Wednesday event!',
   },
   {
     id: 'evt-2',
+    title: 'First General Body Meeting',
+    date: '2026-02-25',
+    event_type: 'Meeting',
+    time: 'TBD',
+    location: 'TBD',
+    description: 'Our first general body meeting of the semester. All members welcome!',
+  },
+  {
+    id: 'evt-3',
     title: 'Aquarium Field Trip',
     date: '2026-02-15',
     event_type: 'Field Trip',
@@ -38,7 +47,7 @@ const sampleEvents = [
     registration_link: 'https://docs.google.com/forms/d/1dQ1mC3WCq0p5T_e8q2M9Vjm3Bn8LX5ITL6cxzHC-t-I/edit',
   },
   {
-    id: 'evt-3',
+    id: 'evt-4',
     title: 'Marine Biology Workshop',
     date: '2026-03-01',
     event_type: 'Workshop',
@@ -47,7 +56,7 @@ const sampleEvents = [
     description: 'Hands-on microscopy and specimen lab session.',
   },
   {
-    id: 'evt-4',
+    id: 'evt-5',
     title: 'Community Beach Cleanup',
     date: '2026-03-20',
     event_type: 'Volunteer',
@@ -56,7 +65,7 @@ const sampleEvents = [
     description: 'Help protect marine habitats with a shoreline cleanup.',
   },
   {
-    id: 'evt-5',
+    id: 'evt-6',
     title: 'Guest Speaker: Seal Conservation',
     date: '2026-04-03',
     event_type: 'Speaker',
@@ -89,10 +98,10 @@ export default function Calendar() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative py-24 bg-gradient-to-br from-slate-950 via-cyan-950 to-teal-950 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-10 right-20 w-64 h-64 bg-cyan-500/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 left-20 w-80 h-80 bg-teal-500/20 rounded-full blur-3xl" />
+          <div className="absolute top-10 right-20 w-64 h-64 bg-yellow-500/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-10 left-20 w-80 h-80 bg-yellow-400/20 rounded-full blur-3xl" />
         </div>
         
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
@@ -100,8 +109,8 @@ export default function Calendar() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <h1 className="text-5xl font-bold text-white mb-6">Events Calendar</h1>
-            <p className="text-xl text-cyan-100/90">
+            <h1 className="text-5xl font-bold text-yellow-400 mb-6">Events Calendar</h1>
+            <p className="text-xl text-yellow-100/90">
               Stay updated with our meetings, trips, and activities
             </p>
           </motion.div>
@@ -168,9 +177,9 @@ export default function Calendar() {
                         key={day.toISOString()}
                         className={`aspect-square p-1 rounded-lg transition-colors ${
                           isToday(day) 
-                            ? 'bg-cyan-500 text-white' 
+                            ? 'bg-yellow-500 text-blue-950' 
                             : hasEvents 
-                              ? 'bg-cyan-50 hover:bg-cyan-100' 
+                              ? 'bg-yellow-50 hover:bg-yellow-100' 
                               : 'hover:bg-slate-50'
                         }`}
                       >
@@ -184,7 +193,7 @@ export default function Calendar() {
                                 <div 
                                   key={event.id}
                                   className={`text-[10px] truncate px-1 py-0.5 rounded ${
-                                    isToday(day) ? 'bg-white/20' : 'bg-cyan-200'
+                                    isToday(day) ? 'bg-blue-950/30' : 'bg-blue-200'
                                   }`}
                                   title={event.title}
                                 >
@@ -192,7 +201,7 @@ export default function Calendar() {
                                 </div>
                               ))}
                               {dayEvents.length > 2 && (
-                                <span className={`text-[10px] ${isToday(day) ? 'text-white/70' : 'text-cyan-600'}`}>
+                                <span className={`text-[10px] ${isToday(day) ? 'text-blue-950/70' : 'text-blue-600'}`}>
                                   +{dayEvents.length - 2} more
                                 </span>
                               )}
@@ -215,8 +224,8 @@ export default function Calendar() {
                 transition={{ delay: 0.1 }}
                 className="bg-white rounded-2xl shadow-sm p-6"
               >
-                <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                  <CalendarIcon className="w-5 h-5 text-cyan-600" />
+                <h3 className="text-xl font-bold text-blue-950 mb-6 flex items-center gap-2">
+                  <CalendarIcon className="w-5 h-5 text-yellow-600" />
                   Upcoming Events
                 </h3>
 
@@ -238,7 +247,7 @@ export default function Calendar() {
                     {upcomingEvents.map(event => (
                       <div 
                         key={event.id}
-                        className="border border-slate-100 rounded-xl p-4 hover:border-cyan-200 hover:bg-cyan-50/30 transition-all"
+                        className="border border-slate-100 rounded-xl p-4 hover:border-yellow-300 hover:bg-yellow-50/30 transition-all"
                       >
                         <div className="flex items-start justify-between gap-2 mb-2">
                           <h4 className="font-semibold text-slate-900">{event.title}</h4>
@@ -279,7 +288,7 @@ export default function Calendar() {
                             href={event.registration_link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-sm text-cyan-600 hover:text-cyan-700 mt-2"
+                            className="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-700 mt-2"
                           >
                             Register <ExternalLink className="w-3 h-3" />
                           </a>
